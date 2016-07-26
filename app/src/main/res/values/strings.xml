@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">New App</string>
+    <string name="new_name">New name</string>
+    <string name="submit">Submit</string>
+    <string name="nothing_yet">Nothing Yet</string>
+    <string name="play">Play</string>
+    <string name="number">Number</string>
+    <string name="write1">Write</string>
+    <string name="add_number">Add Number</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="bill_amount">Bill Amount</string>
+    <string name="tip">Tip</string>
+    <string name="_0_0">0.0</string>
+    <string name="total">Total</string>
+    <string name="_10">10%</string>
+    <string name="_20">20%</string>
+    <string name="_25">25%</string>
+</resources>

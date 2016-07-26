@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="madeezi.newapp.GameActivity">
+
+    <TextView
+        android:id="@+id/tvBillAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/bill_amount"
+        android:textColor="@android:color/black"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/etBillInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvBillAmountLabel"
+        android:layout_alignTop="@+id/tvBillAmountLabel"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tvBillAmountLabel"
+        android:background="@drawable/edit_box"
+        android:gravity="right"
+        android:inputType="number"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvTipLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBillAmountLabel"
+        android:layout_marginTop="25dp"
+        android:text="@string/tip"
+        android:textColor="@android:color/black"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTipLabel"
+        android:layout_alignBottom="@+id/tvTipLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvTipLabel"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/tvTipLabel"
+        android:gravity="right"
+        android:hint="@string/_0_0"
+        android:textSize="26sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/tvTipLabel"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="25dp"
+        android:text="@string/total"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTotalLabel"
+        android:layout_alignBottom="@+id/tvTotalLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvTotalLabel"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/tvTotalLabel"
+        android:gravity="right"
+        android:hint="@string/_0_0"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvTotalLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/_10" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_20" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_25" />
+    </RadioGroup>
+
+
+</RelativeLayout>

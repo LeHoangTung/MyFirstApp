@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue"
+    android:orientation="vertical"
+    tools:context="madeezi.newapp.LoginActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Dino EGG"
+        android:textColor="@color/blue"
+        android:textSize="60sp" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/label"
+        android:layout_margin="16dp"
+        android:background="@android:color/white"
+        android:hint="Email"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
+
+    <EditText
+        android:id="@+id/edit_text2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edit_text"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:inputType="textPassword"
+        android:background="@android:color/white"
+        android:hint="Passwork"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edit_text2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_state"
+        android:onClick="waiting"
+        android:text="Log In"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/transparent"
+        android:text="Sign Up for App"
+        android:textAllCaps="false"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="\?"
+        android:onClick="questionAC"/>
+
+
+</RelativeLayout>
